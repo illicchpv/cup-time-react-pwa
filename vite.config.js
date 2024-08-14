@@ -34,7 +34,7 @@ const vitePWA = VitePWA({
     runtimeCaching: [
       {
         urlPattern: /^https:\/\/cup-time-api-q31j.onrender.com\/api/,
-        handler: 'NetworkFirst',
+        handler: 'StaleWhileRevalidate',
         options: {
           cacheName: "api-cache",
           cacheableResponse: {
@@ -44,7 +44,7 @@ const vitePWA = VitePWA({
       },
       {
         urlPattern: /^https:\/\/cup-time-api-q31j.onrender.com\/images/,
-        handler: 'NetworkFirst',
+        handler: 'StaleWhileRevalidate',
         options: {
           cacheName: "img-cache",
           cacheableResponse: {
