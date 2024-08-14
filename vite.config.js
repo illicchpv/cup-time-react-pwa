@@ -6,7 +6,9 @@ export default defineConfig({
   define: {
     __BUILD_DATE__: JSON.stringify(new Date().valueOf()),
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+  ],
   build: {
     rollupOptions: {
       output: {
