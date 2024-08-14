@@ -31,7 +31,29 @@ const vitePWA = VitePWA({
   },
   workbox: {
     globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg,woff,woff2,txt}'],
-  },  
+    runtimeCaching: [
+      {
+        urlPattern: /^https:\/\/cup-time-api-q31j.onrender.com\/api/,
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: "api-cache",
+          cacheableResponse: {
+            statuses: [0, 200]
+          },
+        },
+      },
+      {
+        urlPattern: /^https:\/\/cup-time-api-q31j.onrender.com\/images/,
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: "img-cache",
+          cacheableResponse: {
+            statuses: [0, 200]
+          },
+        },
+      },
+    ],
+  },
 });
 
 // https://vitejs.dev/config/
