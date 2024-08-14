@@ -24,12 +24,14 @@ const vitePWA = VitePWA({
         "src": "/favicon/android-chrome-512x512.png",
         "sizes": "512x512",
         "type": "image/png",
-        "purpose": "any maskable"
       },
       // favicon-16x16.png favicon-32x32.png mstile-150x150.png 
       // apple-touch-icon.png favicon.ico 
     ],
-  }
+  },
+  workbox: {
+    globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg,woff,woff2,txt}'],
+  },  
 });
 
 // https://vitejs.dev/config/

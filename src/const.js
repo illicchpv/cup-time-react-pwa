@@ -53,7 +53,7 @@ export const debounce = (fn, ms) => {
 };
 
 export const getActiveClass = (category) => {
-  console.log('category: ', category, "location.href: ", location.href);
+  // console.log('category: ', category, "location.href: ", location.href);
   if(!category) return '';
   if (location.href.includes('#/products')) {
     const hash = location.hash;
