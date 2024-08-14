@@ -32,6 +32,7 @@ export const Cart = () => {
     console.log('orderData: ', orderData);
 
     try {
+      setOrderError([]);
       const response = await fetch(API_URL_POST_ORDER, {
         method: 'POST',
         headers: {

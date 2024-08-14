@@ -56,8 +56,8 @@ export const getActiveClass = (category) => {
   // console.log('category: ', category, "location.href: ", location.href);
   if(!category) return '';
   if (location.href.includes('#/products')) {
-    const hash = location.hash;
-    if(hash.includes(`?category=${category}`)) return 'active';
+    const hash = location.hash + " ";
+    if(hash.includes(`?category=${category} `)) return 'active';
     return "";
   } else {
     const currentCategory = new URLSearchParams(location.search).get("category");
