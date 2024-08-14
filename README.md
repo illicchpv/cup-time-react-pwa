@@ -10,3 +10,5 @@ https for localhost
 https://www.npmjs.com/package/https-localhost
   HTTPS server running on localhost
      >serve
+
+npm install --save-dev github-pages     
