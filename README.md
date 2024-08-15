@@ -33,3 +33,7 @@ https://cup-time-react-pwa.vercel.app/#/products?category=coffee
   //     }
   //   }
   // }
+
+https://cup-time-react-pwa.vercel.app
+
+подгонка дизайна 

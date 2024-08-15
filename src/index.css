@@ -91,16 +91,18 @@ input[type="number"] {
 .header__logo-link {
   font-size: 0;
   position: relative;
+  margin-bottom: 6px;
 }
 .header__logo-link::after{
   content: attr(data-text);
   font-size: 8px;
   position: absolute;
   display: block;
-  width: 100%;
+  width: 100px;
   text-align: center;
-  right: 0;
+  left: 0;
   bottom: -15px;
+  color: #64099b;
 }
 
 .header__menu {
