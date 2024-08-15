@@ -30,6 +30,8 @@ const vitePWA = VitePWA({
     ],
   },
   workbox: {
+    // modifyURLPrefix: { "/assets": "./assets" },
+
     globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg,woff,woff2,txt}'],
     runtimeCaching: [
       {
