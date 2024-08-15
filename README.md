@@ -37,3 +37,7 @@ https://cup-time-react-pwa.vercel.app/#/products?category=coffee
 https://cup-time-react-pwa.vercel.app
 
 подгонка дизайна 
+
+удалось опубликовать на GitHub Pages но пришлось вернуться к HashRouter
+  в package.json поменялась команда:  "build": "vite build --base=./ --emptyOutDir", 
+  [cup time](https://illicchpv.github.io/cup-time-react-pwa)

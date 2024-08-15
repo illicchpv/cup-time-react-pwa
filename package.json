@@ -9,7 +9,8 @@
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "devOpen": "vite --open",
-    "build": "vite build",
+    "build": "vite build --base=./ --emptyOutDir", 
+    "buildOld": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
