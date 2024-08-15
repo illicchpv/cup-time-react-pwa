@@ -66,4 +66,4 @@ export const getActiveClass = (category) => {
 };
 
 // eslint-disable-next-line no-undef
-export const buildDate = new Date(__BUILD_DATE__).toLocaleString('ru', {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'});
+export const buildDate = new Date(__BUILD_DATE__).toLocaleString('ru', {year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'});

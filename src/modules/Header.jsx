@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import {Link, useLocation} from "react-router-dom";
 import {useCart} from "../context/CartContext";
-import {calcTotalCount, getActiveClass} from "../const";
+import {buildDate, calcTotalCount, getActiveClass} from "../const";
 import {useProduct} from "../context/ProductContext";
 import {useEffect, useState} from "react";
 
@@ -22,7 +22,7 @@ export const Header = () => {
   return (
     <header className={`header ${isCartEmpty}`}>
       <div className="container header__container">
-        <Link className="header__logo-link" to="/">
+        <Link className="header__logo-link" to="/" data-text={'Build: ' + buildDate}>
           <img className="header__logo" src="./image/logo.svg" alt="Cup time логотип" />
         </Link>
 

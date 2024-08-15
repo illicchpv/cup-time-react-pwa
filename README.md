@@ -22,3 +22,14 @@ https://github.com/illicchpv/cup-time-react-pwa
 https://cup-time-react-pwa.vercel.app/#/products?category=coffee
 
 'CacheFirst' | 'CacheOnly' | 'NetworkFirst' | 'NetworkOnly' | 'StaleWhileRevalidate'
+
+не обязательно предотвращать хеширование выходных файлов в vite.config.js
+  // build: {
+  //   rollupOptions: {
+  //     output: {
+  //       entryFileNames: `assets/[name].js`,
+  //       chunkFileNames: `assets/[name].js`,
+  //       assetFileNames: `assets/[name].[ext]`
+  //     }
+  //   }
+  // }
